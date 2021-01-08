@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Side Menu</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+</head>
+<body>
+    <nav class="navbar">
+        <span class="open-slide">
+            <a id="drawer" href="#" onclick="openSlideMenu()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </span>
+        <ul class="navbar-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="About">About</a></li>
+            <li><a href="Services">Services</a></li>
+            <li><a href="Contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+    <div id="main">
+        <h1>Responsive Side Menu</h1>
+    </div>
+    <script>
+        function openSlideMenu(){
+            document.getElementById('side-menu').style.width='250px';
+            document.getElementById('main').style.marginLeft='250px';
+        }
+        function closeSideMenu(){
+            document.getElementById('side-menu').style.width='0px';
+            document.getElementById('main').style.marginLeft='0px';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+.container-1{
+    height: 200px;
+    display: flex;
+}
+
+.container-2{
+    display: flex;
+    height: 400px;
+}
+
+.box-1{
+    margin: 5px;
+    order: 1;
+    flex:1;
+    background-color: red;
+}
+.box-2{
+    margin: 5px;
+    order: 2;
+    flex: 2;
+    background-color: red;
+}
+.inner-1{
+    margin: 5px;
+    order: 1;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+.inner-2{
+    margin: 5px;
+    order: 2;
+    flex: 1;
+    background: red;
+}
+
+.inner-in-1{
+    margin: 5px;
+    background-color: red;
+    height: 100%;
+    
+
+}
+.inner-in-2{
+    margin: 5px;
+    height: 100%;
+    display: flex;
+    
+}
+.box-3{
+    background-color: red;
+    flex: 1;
+    margin-right: 5px;
+}
+.box-4{
+    background-color: red;
+    flex: 1;
+}

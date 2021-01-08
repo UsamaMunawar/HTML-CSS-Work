@@ -1,0 +1,205 @@
+/*
+
+*{
+    margin: 0;
+    padding: 0;
+
+    to reset the whole page including all elements
+}
+*/
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: red;
+}
+
+a:active{
+    color: green;
+}
+
+
+
+body{
+    background-color: #F4F4f4;
+    color: #555555;
+   /* font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;*/
+    font: normal 16px Arial, Helvetica, sans-serif ;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+
+.button{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+}
+
+
+.button:hover{
+    background-color: red;
+    color:white;
+}
+
+
+.clr{
+    clear: both;
+}
+
+.box-1{
+    background-color: #333333;
+    color:#ffffff;
+
+    /*
+    border-top: 5px red solid;
+    border-right: 5px red solid;
+    border-bottom: 5px red solid;
+    border-left:5px red solid;
+    */
+
+    border: 5px red solid;
+
+    padding: 20px;
+
+    margin: 20px 0px;
+
+}
+
+
+.box-1 h1{
+    font-family: Tahoma;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    word-spacing: 1em;
+
+}
+
+.box-2{
+    border: 3px dotted lightgray;
+    padding: 20px;
+    margin: 20px 0px;
+
+}
+
+.categories{
+    border: 1px grey solid;
+    padding: 10px;
+    border-radius: 15px; 
+}
+
+.categories h2{
+    text-align: center;
+}
+
+.categories ul{
+    padding: 0px;
+    padding-left: 20px;
+    list-style: square;
+    list-style: none;
+}
+
+.categories li{
+    padding-bottom: 6px;
+    border-bottom: dotted 1px #333;
+    list-style-image: url("../images/check.png");
+}
+
+.myForm{
+    padding: 20px;
+
+}
+
+.myForm .form-group{
+    padding-bottom: 15px;
+}
+
+
+.myForm label{
+    display: block;
+}
+
+.myForm input[type=text], .myForm textarea{
+    padding: 8px;
+    width: 100%;
+}
+
+
+.blocks{
+    float: left;
+    width: 33%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+#main-block{
+    float: left;
+    width: 70%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+
+#sidebar{
+    float: right;
+    width: 30%;
+    background-color: darkgrey;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+
+.positioning-box{
+    margin-top: 30px;
+    width: 800px;
+    height: 500px;
+    border: 1px solid black;
+    position: relative;
+    background-image: url("../images/bg-image.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+.positioning-box h1{
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+.positioning-box h2{
+    position: absolute ;
+    bottom: 40px;
+    right: 100px;
+}
+
+
+.fix-me{
+    position: fixed;
+    top: 400px;
+}
+
+.mylist li:first-child{
+    background: red;
+
+}
+
+.mylist li:nth-child(5){
+    background-color: yellow;
+}

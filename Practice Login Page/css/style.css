@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url("../images/main-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Redressed', cursive;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    width: 1000px;
+    display: flex;
+}
+
+
+.intro-panel{
+    background-image: url("../images/login-bg.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+}
+
+
+.intro-panel img{
+    height: 60px;
+    width: 60px;
+}
+
+.login-area{
+    color: #142a4a;
+    flex: 1;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login{
+    margin-top: 70px;
+    display: flex;
+}
+
+
+input{
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 3px;
+    border-bottom: 1px solid black;
+}
+
+input:last-of-type{
+    margin-bottom: 35px;
+}
+input:focus{
+    outline: none;
+    border-bottom: 2px solid black;
+}
+
+
+.login-btn{
+    width: 90%;
+    padding: 5px;
+    font-weight: bold;
+    background-color: #142a4a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.login-form{
+    flex: 1.3;
+    border-right: 1px solid lightslategrey;
+}
+
+.fb-login{
+    flex: 1;
+    padding: 0px 20px;
+}
+
+
+.fb-login h3{
+    margin-bottom: 85px;
+}
+
+
+.fb-login a{
+    background-color: #4267B2;
+    padding: 10px 40px;
+}
+
+a{
+    background-color: #142a4a;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border: 0px solid black;
+    border-radius: 10px;
+}
+
+.question-link{
+    flex: 1;
+    align-self:center;
+    margin-top: 30px;
+}
+
+
+@media(max-width: 768px){
+    .container{
+        flex-direction: column;
+    }
+    .login{
+        flex-direction: column;
+    }
+}
